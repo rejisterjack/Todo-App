@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Todo App</title>
+</head>
+
+<body>
+  <div class="top-container">
+    <div class="logo"><span>task</span>list</div>
+    <button class="add-task-btn" id="add-card-btn">
+      <i class="fa-solid fa-circle-plus"></i> add task
+    </button>
+  </div>
+
+  <div class="para">your tasklist is empty</div>
+
+  <div class="popup">
+    <h2>add your task here</h2>
+    <input type="text" class="card-name">
+    <div class="popup-btn">
+      <button>add</button>
+      <button>cancle</button>
+    </div>
+  </div>
+
+  <div class="cards" id="cards"></div>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
