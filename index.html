@@ -31,7 +31,7 @@
       <div class="card">
         <h2>task name</h2>
         <hr>
-        <ul class="card-list">
+        <ul class="card-list" id="card-list">
           <!-- <li>
             <p>task name</p>
             <i class="fa-solid fa-check"></i>
@@ -42,8 +42,8 @@
           </li> -->
         </ul>
         <div class="card-btn">
-          <i class="fa-solid fa-trash"></i>
-          <i class="fa-solid fa-circle-plus"></i>
+          <i class="fa-solid fa-trash" id="del-card"></i>
+          <i class="fa-solid fa-circle-plus" id="add-task-card"></i>
         </div>
       </div>
     </div>
@@ -52,11 +52,20 @@
   </div>
 
   <div class="popup">
-      <h2>add your task here</h2>
+      <h2>add your task name here</h2>
       <input type="text" class="card-name" id="card-name" value="">
       <div class="popup-btn">
         <button id="add-task-btn">add</button>
         <button id="cancle-task-btn">cancle</button>
+      </div>
+    </div>
+
+    <div class="final-popup">
+      <h2>add your task here</h2>
+      <input type="text" class="final-card-name" id="final-card-name" value="">
+      <div class="popup-btn">
+        <button id="final-add-task-btn">add</button>
+        <button id="final-cancle-task-btn">cancle</button>
       </div>
     </div>
 

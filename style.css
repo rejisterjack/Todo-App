@@ -43,7 +43,7 @@ body {
 
 /* popup */
 
-.popup{
+.popup, .final-popup{
   border: 2px solid orangered;
   width: 300px;
   height: 120px;
@@ -58,6 +58,7 @@ body {
   border-radius: 10px;
   z-index: 5;
 }
+
 .popup-btn{
   display: flex;
   justify-content: space-between;
