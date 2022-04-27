@@ -13,25 +13,52 @@
 </head>
 
 <body>
-  <div class="top-container">
-    <div class="logo"><span>task</span>list</div>
-    <button class="add-task-btn" id="add-card-btn">
-      <i class="fa-solid fa-circle-plus"></i> add task
-    </button>
-  </div>
+  <div class="main-container">
 
-  <div class="para">your tasklist is empty</div>
+
+    <div class="top-container">
+      <div class="logo"><span>task</span>list</div>
+      <button class="show-popup" id="show-popup">
+        <i class="fa-solid fa-circle-plus"></i> add task
+      </button>
+    </div>
+
+    <div class="para">your tasklist is empty</div>
+
+
+    <div class="cards" id="cards">
+      
+      <div class="card">
+        <h2>task name</h2>
+        <hr>
+        <ul class="card-list">
+          <!-- <li>
+            <p>task name</p>
+            <i class="fa-solid fa-check"></i>
+          </li>
+          <li>
+            <p>task name</p>
+            <i class="fa-solid fa-check"></i>
+          </li> -->
+        </ul>
+        <div class="card-btn">
+          <i class="fa-solid fa-trash"></i>
+          <i class="fa-solid fa-circle-plus"></i>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
 
   <div class="popup">
-    <h2>add your task here</h2>
-    <input type="text" class="card-name">
-    <div class="popup-btn">
-      <button>add</button>
-      <button>cancle</button>
+      <h2>add your task here</h2>
+      <input type="text" class="card-name" id="card-name" value="">
+      <div class="popup-btn">
+        <button id="add-task-btn">add</button>
+        <button id="cancle-task-btn">cancle</button>
+      </div>
     </div>
-  </div>
-
-  <div class="cards" id="cards"></div>
 
   <script src="./app.js"></script>
 </body>

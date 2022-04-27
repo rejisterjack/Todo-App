@@ -12,9 +12,12 @@ body {
   color: silver;
   font-size: 62.5%;
   font-family: Arial, Helvetica, sans-serif;
+}
+.main-container{
   max-width: 1440px;
   margin: 30px auto;
   width: 75vw;
+  z-index: 1;
 }
 .top-container {
   display: flex;
@@ -25,7 +28,7 @@ body {
   font-size: 3rem;
   margin-bottom: 3px;
 }
-.add-task-btn {
+.show-popup {
   border: none;
   background: #fff;
   color: orangered;
@@ -34,7 +37,7 @@ body {
 }
 .para {
   font-size: 1.5rem;
-  width: 100%;
+  width: 60%;
   margin: 10px 40%;
 }
 
@@ -47,12 +50,13 @@ body {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  position: absolute;
-  margin-left: 27%;
+  position: fixed;
+  margin: 0px 40%;
   text-align: center;
   align-items: center;
   justify-content: space-between;
   border-radius: 10px;
+  z-index: 5;
 }
 .popup-btn{
   display: flex;
@@ -71,5 +75,46 @@ body {
   cursor: pointer;
 }
 .cards {
-  border: 2px solid red;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.card{
+  width: 200px;
+  height: 300px;
+  border: 2px solid silver;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  font-size: 1rem;
+  margin: 30px 50px;
+}
+.card h2{
+  color: orangered;
+  margin-bottom: 10px;
+}
+.card hr{
+  margin-bottom: 10px;
+}
+.card ul{
+  height: 200px
+}
+.card li{
+  display: flex;
+  justify-content: space-evenly;
+}
+.card li i{
+  color: orangered;
+  cursor: pointer;
+}
+.card-btn{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  color: orangered
+}
+.card-btn i{
+  cursor: pointer;
 }
