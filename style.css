@@ -43,7 +43,7 @@ body {
 
 /* popup */
 
-.popup, .final-popup{
+.popup{
   border: 2px solid orangered;
   width: 300px;
   height: 120px;
@@ -51,12 +51,27 @@ body {
   flex-direction: column;
   padding: 10px;
   position: fixed;
-  margin: 0px 40%;
   text-align: center;
   align-items: center;
   justify-content: space-between;
   border-radius: 10px;
   z-index: 5;
+  color: orangered;
+}
+.final-popup{
+  border: 2px solid orangered;
+  width: 300px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  z-index: 5;
+  color: orangered;
 }
 
 .popup-btn{

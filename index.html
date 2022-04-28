@@ -19,7 +19,7 @@
     <div class="top-container">
       <div class="logo"><span>task</span>list</div>
       <button class="show-popup" id="show-popup">
-        <i class="fa-solid fa-circle-plus"></i> add task
+        <i class="fa-solid fa-circle-plus" id="add-task"></i> add task
       </button>
     </div>
 
@@ -27,47 +27,48 @@
 
 
     <div class="cards" id="cards">
-      
-      <div class="card">
+
+      <!-- <div class="card" id="card">
         <h2>task name</h2>
         <hr>
         <ul class="card-list" id="card-list">
-          <!-- <li>
+          <li>
             <p>task name</p>
             <i class="fa-solid fa-check"></i>
           </li>
           <li>
             <p>task name</p>
             <i class="fa-solid fa-check"></i>
-          </li> -->
+          </li>
         </ul>
         <div class="card-btn">
           <i class="fa-solid fa-trash" id="del-card"></i>
           <i class="fa-solid fa-circle-plus" id="add-task-card"></i>
+        </div>
+
+        <div class="final-popup">
+          <h2>add task here</h2>
+          <input type="text" class="final-task-name" id="final-task-name" value="">
+          <div class="final-popup-btn">
+            <button id="final-add-task-btn">add</button>
+            <button id="final-cancle-task-btn">cancle</button>
+          </div>
+        </div> -->
+
+
+      </div>
+      <div class="popup" id="popup">
+        <h2>add tasklist here</h2>
+        <input type="text" class="card-name" id="card-name" value="">
+        <div class="popup-btn">
+          <button id="add-task-btn" class="add-tasklist">add</button>
+          <button id="cancle-task-btn" class="cancle-tasklist">cancle</button>
         </div>
       </div>
     </div>
 
 
   </div>
-
-  <div class="popup">
-      <h2>add your task name here</h2>
-      <input type="text" class="card-name" id="card-name" value="">
-      <div class="popup-btn">
-        <button id="add-task-btn">add</button>
-        <button id="cancle-task-btn">cancle</button>
-      </div>
-    </div>
-
-    <div class="final-popup">
-      <h2>add your task here</h2>
-      <input type="text" class="final-card-name" id="final-card-name" value="">
-      <div class="popup-btn">
-        <button id="final-add-task-btn">add</button>
-        <button id="final-cancle-task-btn">cancle</button>
-      </div>
-    </div>
 
   <script src="./app.js"></script>
 </body>
